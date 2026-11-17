@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>51吃瓜网每日大赛观看-赛程与围观指南</title>
+<meta name="description" content="51吃瓜网每日大赛观看主页，汇总每日大赛赛程时间、参赛瓜榜、围观入口与结果回放。按日期追踪热门瓜条投票走势，读懂分组规则、围观礼仪与高分瓜条的判定标准，一站看清每日大赛进度。">
+<meta name="keywords" content="51吃瓜网每日大赛观看">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e5342f'/%3E%3Cpath d='M20 22h24l-6 8 6 8H20l6-8z' fill='%23fff7e8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --red:#e5342f;
+  --red-deep:#b8221e;
+  --ink:#1b1b1f;
+  --ink-2:#3a3a42;
+  --muted:#6c6c78;
+  --line:#e4e0d9;
+  --paper:#faf7f1;
+  --card:#ffffff;
+  --gold:#c98a18;
+  --gold-soft:#f6ecd7;
+  --green:#2f7a52;
+  --blue:#2b5d9b;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(27,27,31,.07);
+  --shadow-lift:0 8px 22px rgba(27,27,31,.12);
+  --gap:24px;
+  --font: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --notice-h:40px;
+  --head-h:62px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:var(--red-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.3em}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+section{scroll-margin-top:calc(var(--notice-h) + var(--head-h) + 14px)}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:var(--ink);
+  color:#f4eee2;
+  height:var(--notice-h);
+  display:flex;align-items:center;
+  font-size:13.5px;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;width:100%;overflow:hidden;white-space:nowrap}
+.announce .dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex:none;box-shadow:0 0 0 3px rgba(229,52,47,.28)}
+.announce b{color:#ffd9d2;font-weight:600}
+.announce a{color:#ffe9a8;text-decoration:underline;text-underline-offset:2px}
+.announce .ann-scroll{overflow:hidden;text-overflow:ellipsis}
+
+/* 页头 */
+.site-head{
+  position:sticky;top:var(--notice-h);z-index:55;
+  background:rgba(250,247,241,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  height:var(--head-h);
+}
+.site-head .wrap{display:flex;align-items:center;gap:18px;height:100%}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand .mark{width:34px;height:34px;flex:none}
+.brand .bname{font-weight:800;font-size:19px;letter-spacing:.5px;color:var(--ink)}
+.brand .bname span{color:var(--red)}
+.nav-main{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav-main::-webkit-scrollbar{display:none}
+.nav-main a{
+  padding:7px 11px;border-radius:var(--radius-sm);
+  color:var(--ink-2);font-size:14.5px;font-weight:500;white-space:nowrap;
+}
+.nav-main a:hover,.nav-main a.active{background:#fff;color:var(--red-deep);text-decoration:none;box-shadow:var(--shadow)}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none}
+.search-box{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 4px 4px 12px}
+.search-box input{border:0;outline:0;background:transparent;width:132px;font-family:var(--font);font-size:14px;color:var(--ink)}
+.search-box button{border:0;background:var(--red);color:#fff;border-radius:999px;padding:5px 12px;font-size:13.5px;cursor:pointer;font-family:var(--font)}
+.search-box button:hover{background:var(--red-deep)}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);padding:7px 11px;font-family:var(--font);font-size:14px;cursor:pointer;color:var(--ink-2)}
+.search-feedback{display:none;font-size:13px;color:var(--red-deep);position:absolute;right:18px;top:calc(var(--notice-h) + var(--head-h) - 4px);background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:8px;box-shadow:var(--shadow);z-index:56}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 380px at 85% -10%, rgba(201,138,24,.18), transparent 62%),
+    radial-gradient(700px 300px at 0% 110%, rgba(229,52,47,.13), transparent 60%),
+    var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;padding-top:46px;padding-bottom:46px;position:relative;z-index:2}
+.hero-eye{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 13px;font-size:13px;color:var(--ink-2);box-shadow:var(--shadow);margin-bottom:16px}
+.hero-eye .pulse{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(28px,4vw,42px);letter-spacing:.5px;font-weight:800;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--red);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:8px;background:rgba(229,52,47,.16);z-index:-1}
+.hero-lead{font-size:16.5px;color:var(--ink-2);max-width:34em;margin-top:14px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 20px;border-radius:10px;font-weight:600;font-size:15px;
+  border:1px solid transparent;transition:transform .18s,box-shadow .18s;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 4px 14px rgba(229,52,47,.3)}
+.btn-primary:hover{background:var(--red-deep)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:var(--shadow)}
+.hero-stats{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+.hero-stats div{font-size:13px;color:var(--muted)}
+.hero-stats strong{display:block;font-size:24px;color:var(--ink);font-weight:800;line-height:1.2}
+.hero-art{position:relative;min-height:280px}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 10px 22px rgba(27,27,31,.12))}
+
+/* 主内容布局：双栏标准 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 312px;gap:34px;padding-top:40px;padding-bottom:20px}
+.main-col{min-width:0}
+.side-col{min-width:0}
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .side-col{order:2}
+  .main-col{order:1}
+}
+
+/* 通用板块 */
+.blk{margin-bottom:44px}
+.blk-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:18px;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.blk-head h2{font-size:23px;font-weight:800;letter-spacing:.4px}
+.blk-head h2 .num{color:var(--red);font-size:15px;font-weight:700;margin-right:8px;vertical-align:2px}
+.blk-head .more{font-size:13.5px;color:var(--muted);white-space:nowrap}
+.blk-head .more:hover{color:var(--red-deep);text-decoration:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:760px){
+  .grid-3{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+}
+.tag{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;background:var(--gold-soft);color:#8a5c0c;margin-right:6px}
+.tag.red{background:#fde8e6;color:var(--red-deep)}
+.tag.green{background:#e4f1e9;color:var(--green)}
+.tag.blue{background:#e6eef8;color:var(--blue)}
+
+/* 领域概览 */
+.overview-card{padding:22px}
+.overview-card h3{font-size:18px;margin-bottom:8px}
+.overview-card p{color:var(--ink-2);font-size:15px}
+.ov-row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px dashed var(--line);font-size:14px;color:var(--ink-2)}
+.ov-row b{color:var(--ink);min-width:74px;flex:none}
+
+/* 精选推荐 */
+.feat-card{display:flex;flex-direction:column}
+.feat-card img{width:100%;height:142px;object-fit:cover}
+.feat-body{padding:14px 16px 16px}
+.feat-body h3{font-size:16.5px;margin-bottom:6px}
+.feat-body p{font-size:14px;color:var(--muted);margin-bottom:10px}
+.feat-meta{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--muted)}
+.score{font-weight:800;color:var(--red-deep);font-size:15px}
+
+/* 最新更新 紧凑列表 */
+.list-tight{list-style:none;padding:0;margin:0}
+.list-tight li{display:flex;gap:14px;align-items:baseline;padding:12px 4px;border-bottom:1px solid var(--line)}
+.list-tight li:last-child{border-bottom:0}
+.list-tight time{flex:none;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:76px}
+.list-tight a{font-size:15px;color:var(--ink);font-weight:500}
+.list-tight a:hover{color:var(--red-deep)}
+.list-tight .lt-tag{flex:none;margin-left:auto}
+
+/* 分类入口 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  display:inline-flex;align-items:center;gap:6px;
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:7px 15px;font-size:14px;color:var(--ink-2);box-shadow:var(--shadow);
+  transition:transform .16s;
+}
+.tag-index a:hover{transform:translateY(-2px);border-color:var(--red);color:var(--red-deep);text-decoration:none}
+.tag-index a .cnt{font-size:12px;color:var(--muted)}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow)}
+.deep h2{font-size:24px;margin-bottom:6px}
+.deep .deep-lead{color:var(--muted);font-size:14px;margin-bottom:18px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.deep h3{font-size:18.5px;margin:24px 0 10px;padding-left:12px;border-left:4px solid var(--red)}
+.deep p{color:var(--ink-2);font-size:15.5px}
+.deep ul{font-size:15.5px;color:var(--ink-2)}
+.deep blockquote{
+  margin:16px 0;padding:14px 18px;background:var(--gold-soft);border-radius:var(--radius-sm);
+  border-left:4px solid var(--gold);font-size:15px;color:#5d4110;
+}
+.judge-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.judge-table th,.judge-table td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.judge-table th{background:#f3efe6;font-weight:700}
+.fact-strip{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}
+.fact-strip span{background:#f3efe6;border-radius:8px;padding:6px 12px;font-size:13px;color:var(--ink-2)}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;padding:0;counter-reset:step;display:grid;gap:14px}
+.steps li{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;box-shadow:var(--shadow)}
+.steps li::before{
+  counter-increment:step;content:counter(step);
+  flex:none;width:30px;height:30px;border-radius:50%;
+  background:var(--red);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;
+}
+.steps li b{display:block;font-size:15.5px;margin-bottom:2px}
+.steps li span{font-size:14px;color:var(--muted)}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;box-shadow:var(--shadow)}
+.faq summary{cursor:pointer;padding:13px 16px;font-weight:600;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;color:var(--red);font-size:20px;font-weight:400;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .faq-body{padding:0 16px 14px;font-size:14.8px;color:var(--ink-2)}
+
+/* 评论 */
+.comment{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.comment:last-child{border-bottom:0}
+.avatar{flex:none;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:14px}
+.comment .c-body{min-width:0}
+.comment .c-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:3px}
+.comment .c-top b{color:var(--ink);font-size:14px}
+.comment p{font-size:14.5px;color:var(--ink-2);margin:0}
+.comment-author-form{background:#fff;border:1px dashed var(--line);border-radius:var(--radius-sm);padding:16px;margin-top:14px}
+.comment-author-form h3{font-size:15.5px;margin-bottom:8px}
+.comment-author-form textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;font-family:var(--font);font-size:14px;resize:vertical;min-height:64px}
+.comment-author-form .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:8px;font-size:13px;color:var(--muted)}
+
+/* 资讯 */
+.news-item{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.news-item:last-child{border-bottom:0}
+.news-item .nd{flex:none;width:52px;text-align:center;background:var(--gold-soft);border-radius:8px;padding:5px 0;color:#7c520b;font-size:12px;line-height:1.3}
+.news-item .nd b{display:block;font-size:17px;color:var(--ink)}
+.news-item h3{font-size:15px;margin-bottom:3px}
+.news-item p{font-size:13.5px;color:var(--muted);margin:0}
+
+/* 推荐标签 */
+.related-tags{display:flex;flex-wrap:wrap;gap:10px}
+.related-tags a{background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 14px;font-size:14px;color:var(--ink-2);box-shadow:var(--shadow)}
+.related-tags a:hover{border-color:var(--red);color:var(--red-deep);text-decoration:none}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rank}
+.rank-list li{display:flex;align-items:center;gap:12px;padding:11px 14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:9px;box-shadow:var(--shadow)}
+.rank-list li::before{
+  counter-increment:rank;content:counter(rank);
+  flex:none;width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:13px;background:#f1ece1;color:var(--ink-2);
+}
+.rank-list li:nth-child(1)::before{background:var(--red);color:#fff}
+.rank-list li:nth-child(2)::before{background:var(--gold);color:#fff}
+.rank-list li:nth-child(3)::before{background:#b0832f;color:#fff}
+.rank-list .rk-name{font-weight:600;font-size:14.8px}
+.rank-list .rk-meta{margin-left:auto;font-size:12.5px;color:var(--muted);flex:none}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 18px 30px}
+.timeline li::before{content:"";position:absolute;left:4px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--red)}
+.timeline b{font-size:14.5px;display:block}
+.timeline span{font-size:13.5px;color:var(--muted)}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin-bottom:22px}
+.side-card h2{font-size:16.5px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.side-nav{list-style:none;padding:0;margin:0;font-size:14px}
+.side-nav a{display:block;padding:6px 10px;border-radius:6px;color:var(--ink-2);border-left:3px solid transparent}
+.side-nav a:hover{background:var(--paper);text-decoration:none}
+.side-nav a.active{color:var(--red-deep);border-left-color:var(--red);background:#fdf1ef;font-weight:600}
+.mini-list{list-style:none;padding:0;margin:0;font-size:14px}
+.mini-list li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.mini-list li:last-child{border-bottom:0}
+.mini-list .m-date{font-size:12px;color:var(--muted);display:block}
+.quote-card{background:linear-gradient(135deg,#fff7ea,#fdf1ef);border:1px solid #eedfc6}
+.quote-card blockquote{margin:0;font-size:14.5px;color:#5d4110;font-style:italic}
+.quote-card .who{font-size:13px;color:var(--muted);margin-top:8px;font-style:normal}
+
+/* 页尾 */
+.site-foot{background:var(--ink);color:#cfc9bd;margin-top:40px;font-size:14px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding:40px 0 26px}
+@media (max-width:880px){.foot-top{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.foot-top{grid-template-columns:1fr;gap:22px}}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand .bname{color:#fff;font-weight:800;font-size:18px}
+.foot-brand .bname span{color:#ff7a70}
+.site-foot h3{color:#fff;font-size:15px;margin-bottom:10px}
+.site-foot ul{list-style:none;padding:0;margin:0}
+.site-foot li{margin-bottom:7px}
+.site-foot a{color:#cfc9bd}
+.site-foot a:hover{color:#fff}
+.foot-note{border-top:1px solid #33333a;padding:16px 0;font-size:12.5px;color:#8f8a80;line-height:1.9}
+.foot-note .demo{color:#a8a294}
+.foot-bottom{border-top:1px solid #33333a;padding:14px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:#8f8a80}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--red);color:#fff;font-size:18px;box-shadow:0 6px 18px rgba(229,52,47,.4);
+  opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s;
+}
+#toTop.show{opacity:1;visibility:visible;transform:none}
+#toTop:hover{background:var(--red-deep)}
+@media (max-width:520px){#toTop{bottom:76px;right:14px;width:40px;height:40px}}
+
+/* 搜索结果无结果反馈条 */
+.hidden{display:none !important}
+
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:24px}
+  .hero-art{min-height:0;max-width:420px}
+}
+@media (max-width:860px){
+  .nav-main{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);
+    flex-direction:column;padding:10px 18px 16px;gap:2px;overflow:visible;
+  }
+  .nav-main.open{display:flex}
+  .nav-main a{padding:10px 8px;border-radius:6px}
+  .menu-btn{display:inline-block}
+  .site-head .wrap{position:relative}
+  .search-box input{width:92px}
+}
+@media (max-width:480px){
+  .hero h1{font-size:27px}
+  .hero-stats{gap:18px}
+  .hero-stats strong{font-size:20px}
+  .search-box input{width:72px}
+  .search-box button{padding:5px 9px;font-size:13px}
+  .blk-head h2{font-size:20px}
+  .deep{padding:20px 16px}
+  .list-tight li{flex-wrap:wrap;gap:4px 10px}
+  .list-tight .lt-tag{margin-left:0}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{animation:none !important;transition:none !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="announce" role="region" aria-label="站点公告">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <span class="ann-scroll"><b>51吃瓜网每日大赛</b> 第 47 比赛日开榜：11 月 8 日 20:00 截止投票，当日参赛 38 条，回放已开放 · <a href="/#latest">查看今日更新</a></span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/#" aria-label="返回首页">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#e5342f"/>
+        <path d="M20 22h24l-6 8 6 8H20l6-8z" fill="#fff7e8"/>
+        <circle cx="44" cy="18" r="3.4" fill="#c98a18"/>
+      </svg>
+      <span class="bname">51吃瓜<span>网</span></span>
+    </a>
+    <nav class="nav-main" id="navMain" aria-label="主题导航">
+      <a href="/#overview">大赛概览</a>
+      <a href="/#featured">精选瓜榜</a>
+      <a href="/#latest">最新赛况</a>
+      <a href="/#channels">分类频道</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">围观指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">吃瓜评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search-box" role="search" onsubmit="return false;">
+        <label for="siteSearch" class="hidden">站内查找</label>
+        <input id="siteSearch" type="search" placeholder="找瓜条、选手、规则" autocomplete="off">
+        <button type="button" id="searchBtn">查找</button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMain">菜单</button>
+    </div>
+  </div>
+</header>
+<div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="首屏介绍">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="hero-eye"><span class="pulse" aria-hidden="true"></span>第 47 比赛日进行中 · 投票将于 11 月 8 日 20:00 截止</span>
+        <h1>51吃瓜网每日大赛观看</h1>
+        <p class="hero-lead">每天 12:00 出题、20:00 截止的一条一事赛制。这里按比赛日记录参赛瓜条、评委打分与围观回放，顺带把「高分瓜条凭什么高分」拆成可以核对的标准。想看热闹，先看清规则。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#featured">进入今日瓜榜</a>
+          <a class="btn btn-ghost" href="/#guide">围观流程五步走</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>38</strong>今日参赛瓜条</div>
+          <div><strong>6</strong>常设赛区</div>
+          <div><strong>2,914</strong>累计围观打分</div>
+          <div><strong>47</strong>已办比赛日</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 340" role="presentation">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fff7e8"/>
+              <stop offset="1" stop-color="#fbe3d9"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#e5342f"/>
+              <stop offset="1" stop-color="#b8221e"/>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="18" width="392" height="304" rx="22" fill="url(#g1)" stroke="#e9dcc4"/>
+          <rect x="40" y="52" width="190" height="18" rx="9" fill="#e5342f" opacity=".85"/>
+          <rect x="40" y="82" width="130" height="10" rx="5" fill="#c9a45e" opacity=".7"/>
+          <rect x="40" y="118" width="150" height="94" rx="12" fill="#fff" stroke="#e9dcc4"/>
+          <rect x="56" y="134" width="26" height="26" rx="13" fill="url(#g2)"/>
+          <rect x="92" y="138" width="78" height="9" rx="4" fill="#8f8a80" opacity=".5"/>
+          <rect x="92" y="154" width="56" height="8" rx="4" fill="#cfc9bd"/>
+          <rect x="56" y="176" width="114" height="8" rx="4" fill="#cfc9bd"/>
+          <rect x="56" y="190" width="86" height="8" rx="4" fill="#e4e0d9"/>
+          <rect x="206" y="118" width="176" height="44" rx="10" fill="#fff" stroke="#e9dcc4"/>
+          <circle cx="228" cy="140" r="10" fill="#c98a18" opacity=".8"/>
+          <rect x="246" y="132" width="104" height="7" rx="3.5" fill="#b8b2a6"/>
+          <rect x="246" y="146" width="72" height="6" rx="3" fill="#d8d2c6"/>
+          <rect x="206" y="172" width="176" height="44" rx="10" fill="#fff" stroke="#e9dcc4"/>
+          <circle cx="228" cy="194" r="10" fill="#2f7a52" opacity=".8"/>
+          <rect x="246" y="186" width="96" height="7" rx="3.5" fill="#b8b2a6"/>
+          <rect x="246" y="200" width="64" height="6" rx="3" fill="#d8d2c6"/>
+          <rect x="40" y="232" width="342" height="66" rx="12" fill="#fff" stroke="#e9dcc4"/>
+          <rect x="58" y="250" width="30" height="30" rx="8" fill="url(#g2)"/>
+          <text x="73" y="270" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" font-family="sans-serif">47</text>
+          <rect x="102" y="250" width="150" height="9" rx="4" fill="#b8b2a6"/>
+          <rect x="102" y="266" width="196" height="8" rx="4" fill="#e4e0d9"/>
+          <rect x="40" y="36" width="8" height="8" rx="4" fill="#c98a18"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+
+    <div class="main-col">
+
+      <!-- 1. 领域概览 -->
+      <section class="blk" id="overview">
+        <div class="blk-head">
+          <h2><span class="num">01</span>每日大赛是怎么运转的</h2>
+          <span class="more">第 47 比赛日 · 11 月 8 日</span>
+        </div>
+        <div class="grid-3">
+          <article class="card overview-card">
+            <h3>一条一事，当天结榜</h3>
+            <p>每天 12:00 由值班编辑放出题目，参赛者提交一条带时间、地点、可核信息来源的瓜条。20:00 截止，按评委分 70%、围观分 30% 合计排名。</p>
+            <div class="ov-row"><b>当前赛题</b><span>「同一件事的两版说法」</span></div>
+            <div class="ov-row"><b>提交上限</b><span>每人每个比赛日 2 条</span></div>
+          </article>
+          <article class="card overview-card">
+            <h3>六个常设赛区</h3>
+            <p>娱乐、赛事、科技、民生、职场、校园。赛区只决定主评委构成，不限制选题，跨区瓜条按来源主体归档。</p>
+            <div class="ov-row"><b>今日分布</b><span>娱乐 11 · 赛事 8 · 科技 6</span></div>
+            <div class="ov-row"><b>评委人数</b><span>每赛区 3 人，含 1 名外聘</span></div>
+          </article>
+          <article class="card overview-card">
+            <h3>围观也能计分</h3>
+            <p>注册用户对瓜条投 1—5 星，低于 3 星需要写一句理由。同一账号对同一条只记一次，改分以最后一次为准。</p>
+            <div class="ov-row"><b>今日投票</b><span>2,914 人次</span></div>
+            <div class="ov-row"><b>有效理由</b><span>低于 12 字的星级不计权重</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="blk" id="featured">
+        <div class="blk-head">
+          <h2><span class="num">02</span>今日精选瓜条</h2>
+          <span class="more">按 11 月 8 日 18:40 实时评分</span>
+        </div>
+        <div class="grid-3">
+          <article class="card feat-card">
+            <img src="https://picsum.photos/seed/dailyrace47a/640/320" width="640" height="320" loading="lazy" alt="录音棚外景，对应「两版录音时间戳」瓜条配图" style="object-fit:cover">
+            <div class="feat-body">
+              <span class="tag red">科技赛场</span>
+              <h3>录音棚那版母带，时间戳对不上</h3>
+              <p>参赛者「阿栈」提交两段音频的元数据对比，指出官方声明的录制日与文件创建时间差 11 天。</p>
+              <div class="feat-meta"><span>评委 8.6 · 围观 4.4</span><span class="score">8.9</span></div>
+            </div>
+          </article>
+          <article class="card feat-card">
+            <img src="https://picsum.photos/seed/dailyrace47b/640/320" width="640" height="320" loading="lazy" alt="球赛看台一角，对应「补时判罚两版说法」瓜条配图" style="object-fit:cover">
+            <div class="feat-body">
+              <span class="tag">赛事赛区</span>
+              <h3>补时第 4 分钟那次判罚，裁判报告写了什么</h3>
+              <p>主队跟队记者与客队官微给出相反描述，参赛者整理了现场 3 段手机视频的时间轴。</p>
+              <div class="feat-meta"><span>评委 8.2 · 围观 4.6</span><span class="score">8.7</span></div>
+            </div>
+          </article>
+          <article class="card feat-card">
+            <img src="https://picsum.photos/seed/dailyrace47c/640/320" width="640" height="320" loading="lazy" alt="商场店铺卷帘门，对应「撤场通知落款」瓜条配图" style="object-fit:cover">
+            <div class="feat-body">
+              <span class="tag green">民生赛区</span>
+              <h3>商场撤场通知的落款单位，查了没有</h3>
+              <p>通知上盖的公章与商场实际运营方工商登记名称不一致，参赛者附上了 11 月 6 日的现场照片。</p>
+              <div class="feat-meta"><span>评委 7.9 · 围观 4.1</span><span class="score">8.0</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="blk" id="latest">
+        <div class="blk-head">
+          <h2><span class="num">03</span>最新赛况与更新</h2>
+          <span class="more">11 月 8 日 18:40 刷新</span>
+        </div>
+        <div class="card" style="padding:6px 18px">
+          <ul class="list-tight">
+            <li><time datetime="2026-11-08T18:40">11-08 18:40</time><a href="/#deep">深度解析更新：评委「信息可核度」一栏改为 3 档</a><span class="lt-tag tag">规则</span></li>
+            <li><time datetime="2026-11-08T17:25">11-08 17:25</time><a href="/#featured">赛事赛区补录 2 条视频时间轴比对材料</a><span class="lt-tag tag blue">补充</span></li>
+            <li><time datetime="2026-11-08T15:10">11-08 15:10</time><a href="/#comments">围观突破 2,900 人次，低于 3 星评价 41 条</a><span class="lt-tag tag green">互动</span></li>
+            <li><time datetime="2026-11-08T13:02">11-08 13:02</time><a href="/#overview">第 47 比赛日赛题公布：同一件事的两版说法</a><span class="lt-tag tag red">赛题</span></li>
+            <li><time datetime="2026-11-07T21:15">11-07 21:15</time><a href="/#rank">第 46 比赛日最终榜：3 条瓜条因材料缺失降档</a><span class="lt-tag tag">榜单</span></li>
+            <li><time datetime="2026-11-06T19:48">11-06 19:48</time><a href="/#faq">关于「转述与推测怎么写」补了一条说明</a><span class="lt-tag tag blue">FAQ</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="blk" id="channels">
+        <div class="blk-head">
+          <h2><span class="num">04</span>按赛区与题材找瓜</h2>
+          <span class="more">频道随比赛日滚动</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#featured">录音母带时间戳</a>
+          <a href="/#featured">补时判罚两版说法</a>
+          <a href="/#news">商场撤场通知落款</a>
+          <a href="/#rank">高分瓜条拆解</a>
+          <a href="/#deep">评委打分口径</a>
+          <a href="/#comments">围观低分理由</a>
+          <a href="/#timeline">赛制版本变化</a>
+          <a href="/#guide">新手围观流程</a>
+          <a href="/#faq">材料不足怎么降档</a>
+          <a href="/#news">转载与出处标注</a>
+          <a href="/#related">职场赛区瓜条</a>
+          <a href="/#overview">校园赛区赛题</a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析（唯一主体阅读区） -->
+      <section class="blk" id="deep">
+        <div class="deep">
+          <h2>高分瓜条到底赢在哪：用第 45—47 比赛日做一次核对</h2>
+          <p class="deep-lead">材料来自三个比赛日的评分表、评委留言与参赛补充记录，可对照 <a href="/#rank">榜单</a> 与 <a href="/#latest">最新更新</a> 交叉验证。</p>
+
+          <h3>判断一：决定名次的是「可核对材料」，不是故事讲得好不好</h3>
+          <p>第 46 比赛日 8.5 分以上的 5 条瓜条，全部附了至少 2 份可外链核对的材料；8 分以下的 13 条里，9 条只有一段转述。评委「老麦」在 11 月 7 日 22:10 的留言里写道：「素材再好，缺原件就压到 7.5 以下。」这不是审美问题，是流程问题——评分表把「信息可核度」单列 2 分，占总分五分之一。</p>
+          <div class="fact-strip">
+            <span>11-05 起：可核度 3 档制</span>
+            <span>原件 + 截图 = 3 档</span>
+            <span>只有转述 = 1 档</span>
+            <span>档差折算 0.8—1.2 分</span>
+          </div>
+
+          <h3>判断二：同一事件的两版说法，先分「事实／回应／转述／推测」再动笔</h3>
+          <p>第 47 比赛日的录音母带瓜条（8.9 分）能排第一，关键在于参赛者把四类信息分块列出：文件元数据属于事实；厂牌声明属于回应；媒体转引的「知情人士」属于转述；至于母带为何换场，明确标为推测并写了反证条件。相比之下，同赛区一条 6.7 分的瓜条把推测写进了事实段，评委扣分理由只有一句：「第 3 段和第 6 段是两种性质。」</p>
+          <table class="judge-table">
+            <caption class="hidden">四类信息分块对照</caption>
+            <thead>
+              <tr><th>信息类型</th><th>写法要求</th><th>可核痕迹</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>事实</td><td>时间、地点、原件</td><td>文件、照片、公告原文</td></tr>
+              <tr><td>回应</td><td>标明主体与日期</td><td>官微截图、账号名</td></tr>
+              <tr><td>转述</td><td>写清谁说的、哪家媒体</td><td>报道标题与刊发时间</td></tr>
+              <tr><td>推测</td><td>写出反证条件</td><td>无，须显式标注</td></tr>
+            </tbody>
+          </table>
+
+          <h3>判断三：「早发」不再是优势，晚发但补材料反而更容易上榜</h3>
+          <p>11 月 3 日第 43 比赛日的记录显示，12:30 前提交的 9 条瓜条中只有 2 条进前十；而 18:00 之后提交的 7 条里有 4 条进前十。原因写在赛制第 3 版里：评分截止时间从 19:00 延后到 20:30 的打分窗口，评委看的是最终版。参赛者「栗子壳」在第 46 比赛日 19:52 补了第二段视频后，分数从 7.4 升到 8.3。换句话说，抢首发不如补材料。</p>
+          <blockquote>「首发标签现在只影响展示位置，不直接加分。想让分数动，只有两条路：补可核材料，或者把推测段删干净。」——评委留言，11 月 6 日 20:34</blockquote>
+
+          <h3>判断四：围观分和评委分的分歧，集中在「情绪浓度」高的瓜条上</h3>
+          <p>第 45—47 比赛日共 96 条参赛记录，评委分与围观分差超过 1.2 分的 14 条里，11 条属于娱乐赛区。举例：一条涉及两位主播连麦争执的瓜条，围观 4.8 分，评委只给 7.1，理由是没有拿到原始连麦录屏，只有切片。反过来，赛事赛区裁判报告那条评委 8.2、围观 4.6，差 0.6。情绪浓度高的选题，围观容易给高分，评委更看材料——两类分数并列展示后，这个断层变得明显。</p>
+          <ul>
+            <li><b>可核对点：</b>96 条记录的分差原始表在 <a href="/#rank">第 45—47 比赛日榜单</a> 可翻。</li>
+            <li><b>可反驳点：</b>若把「切片」也算作可核材料，上述 11 条里有 3 条评分会抬升约 0.7 分，排序会变。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="blk" id="guide">
+        <div class="blk-head">
+          <h2><span class="num">05</span>第一次围观，按这五步走</h2>
+          <span class="more">适用第 47 比赛日</span>
+        </div>
+        <ol class="steps">
+          <li><div><b>12:00 看赛题</b><span>赛题决定当天瓜条的主线。第 47 比赛日是「同一件事的两版说法」，跨赛区通用。</span></div></li>
+          <li><div><b>先翻材料区，不看结论</b><span>每条瓜条下有「原件」文件夹，先确认是否有文件、截图或公告原文，再读正文。</span></div></li>
+          <li><div><b>用四类信息核对</b><span>事实、回应、转述、推测各看一段，推测段通常带「可能」「据推测」标记。</span></div></li>
+          <li><div><b>20:00 前打分</b><span>低于 3 星须写不少于 12 字的理由，理由不写只记星级不记权重。</span></div></li>
+          <li><div><b>20:30 看榜与评委留言</b><span>评委留言里会写降档或升档的具体原因，这是判断赛制走向最直接的材料。</span></div></li>
+        </ol>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="blk faq" id="faq">
+        <div class="blk-head">
+          <h2><span class="num">06</span>围观时最常问的六个问题</h2>
+          <span class="more">按 11 月 8 日赛制第 3 版</span>
+        </div>
+        <details open>
+          <summary>每日大赛的评审团固定吗，怎么知道谁在打分？</summary>
+          <div class="faq-body">每个赛区 3 名评委，其中 1 名为外聘，任期为 4 个比赛日。评委名单在比赛日 12:00 随赛题一并公布，留言区显示评委昵称与打分理由。第 47 比赛日娱乐赛区外聘评委是「老麦」，这是他本轮第 2 次执评。</div>
+        </details>
+        <details>
+          <summary>参赛瓜条如果材料不足，会被怎样处理？</summary>
+          <div class="faq-body">评分表的「信息可核度」分 3 档，只有转述没有原件的记 1 档，折算约扣 0.8—1.2 分。11 月 7 日第 46 比赛日有 3 条瓜条因此降档，其中 1 条的材料在截止后 12 分钟补齐，未被计入。</div>
+        </details>
+        <details>
+          <summary>围观评分和评委评分，哪个更影响最终名次？</summary>
+          <div class="faq-body">评委分占 70%，围观分占 30%。但围观分低于 3 星且理由充分时，评委会在复核环节重看材料，这也是 96 条记录里出现 14 条分差超 1.2 分的主要原因。</div>
+        </details>
+        <details>
+          <summary>同一件事已经有人参赛，还能再提交吗？</summary>
+          <div class="faq-body">可以，但必须提供不同材料或不同角度。第 47 比赛日录音母带事件已有两条参赛瓜条，第二条因补充了文件创建时间对比而单独计分，最终 7.6 分，排在原创那条之后。</div>
+        </details>
+        <details>
+          <summary>深度解析里说的「可反驳点」是什么意思？</summary>
+          <div class="faq-body">指一个判断如果要被推翻，需要哪些具体条件。例如把切片纳入可核材料，会改变 11 条瓜条的评分排序。写清楚反证条件，是为了让围观者能自己核对，而不只是接受结论。</div>
+        </details>
+        <details>
+          <summary>比赛日结束后多久能看到完整回放？</summary>
+          <div class="faq-body">20:30 出榜即开放全部瓜条与评委留言回放，次日 12:00 前归档到对应赛区频道。11 月 8 日的回放已在 20:35 开放，可在最新更新板块进入。</div>
+        </details>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="blk" id="comments">
+        <div class="blk-head">
+          <h2><span class="num">07</span>围观者怎么说</h2>
+          <span class="more">今日精选 6 条</span>
+        </div>
+        <div class="card" style="padding:6px 18px">
+          <div class="comment">
+            <div class="avatar" style="background:#2b5d9b">梨</div>
+            <div class="c-body">
+              <div class="c-top"><b>栗子壳</b><span>11-08 18:12</span><span class="tag blue">录音母带</span></div>
+              <p>文件创建时间和声明录制日差 11 天，这个点确实是硬的。但母带换场那段还是推测，写得太像结论了，我给 4 星。</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar" style="background:#2f7a52">麦</div>
+            <div class="c-body">
+              <div class="c-top"><b>老麦看球</b><span>11-08 17:44</span><span class="tag">补时判罚</span></div>
+              <p>裁判报告那段我认可，但三份手机视频的拍摄角度都来自主队看台，时间轴对齐后还是缺客队视角，扣一星。</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar" style="background:#8a5c0c">路</div>
+            <div class="c-body">
+              <div class="c-top"><b>路过的小周</b><span>11-08 16:30</span></div>
+              <p>规则贴得挺清楚，就是一天 38 条有点看不过来，建议按赛区分开列。</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar" style="background:#b8221e">重</div>
+            <div class="c-body">
+              <div class="c-top"><b>重看第45比赛日</b><span>11-08 15:08</span><span class="tag red">商场撤场</span></div>
+              <p>撤场通知的公章和工商登记名对不上，这个我昨天路过那家商场也拍到了，卷帘门上贴的还是同一个落款。材料是真的。</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar" style="background:#6c6c78">不</div>
+            <div class="c-body">
+              <div class="c-top"><b>不急着下结论</b><span>11-08 14:20</span></div>
+              <p>围观分和评委分差 1.2 分以上的有 14 条，这个数字我信，但 11 条都在娱乐赛区，会不会是赛区分配导致？希望下一期给个分赛区的表。</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar" style="background:#2b5d9b">阿</div>
+            <div class="c-body">
+              <div class="c-top"><b>阿栈</b><span>11-08 13:55</span><span class="tag blue">参赛者</span></div>
+              <p>我是录音母带那条的提交人。补充说明一下，文件元数据那段是我自己抓的，换场时间只写了「据剧组人员口述」，确实没法核。评委压分我觉得合理。</p>
+            </div>
+          </div>
+        </div>
+        <form class="comment-author-form" onsubmit="return false;">
+          <h3>留下你的围观意见</h3>
+          <label for="cmt" class="hidden">评论内容</label>
+          <textarea id="cmt" placeholder="说说你看了哪条瓜条、哪段材料，最好带上时间或原文措辞"></textarea>
+          <div class="row">
+            <span>低于 3 星评价请写明具体理由，否则不计权重。</span>
+            <button type="button" class="btn btn-primary" style="padding:6px 16px;font-size:14px">提交</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="blk" id="news">
+        <div class="blk-head">
+          <h2><span class="num">08</span>相关资讯与赛制动态</h2>
+          <span class="more">11 月 2 日—11 月 8 日</span>
+        </div>
+        <div class="card" style="padding:6px 18px">
+          <article class="news-item">
+            <div class="nd"><b>07</b>11月</div>
+            <div>
+              <h3>第 46 比赛日最终榜出炉，3 条瓜条因材料缺失降档</h3>
+              <p>榜单页面更新了降档标记，其中 2 条在 20:30 后补齐材料，仍未计入当日成绩。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="nd"><b>06</b>11月</div>
+            <div>
+              <h3>赛制第 3 版生效：评分窗口从 19:00 延后到 20:30</h3>
+              <p>延后 30 分钟的直接影响是补材料的瓜条变多，第 47 比赛日 18:00 后提交的条目占比升至 34%。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="nd"><b>05</b>11月</div>
+            <div>
+              <h3>「信息可核度」改为 3 档，删去原「原创度」两档打分</h3>
+              <p>改档后，只有转述的材料落在 1 档。评委会在留言中单独说明降档原因，不再合并到总分评论。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="nd"><b>03</b>11月</div>
+            <div>
+              <h3>第 43 比赛日统计：12:30 前提交的 9 条仅 2 条进前十</h3>
+              <p>该统计被多次引用作为「晚发补材料更有利」的依据，原始数据可在榜单中按提交时间筛选。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="blk" id="related">
+        <div class="blk-head">
+          <h2><span class="num">09</span>接着可以看这些</h2>
+          <span class="more">按题材关联</span>
+        </div>
+        <div class="related-tags">
+          <a href="/#rank">第 45—47 比赛日完整榜单</a>
+          <a href="/#deep">评委留言里的降档理由合集</a>
+          <a href="/#faq">材料不足与转述边界</a>
+          <a href="/#timeline">赛制第 1 版到第 3 版差异</a>
+          <a href="/#guide">围观打分流程五步</a>
+          <a href="/#comments">围观者低分理由精选</a>
+          <a href="/#featured">录音母带时间戳核对</a>
+          <a href="/#news">补时判罚三份视频视角</a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：榜单 + 时间线 -->
+      <section class="blk" id="rank">
+        <div class="blk-head">
+          <h2><span class="num">10</span>第 47 比赛日实时榜（前十）</h2>
+          <span class="more">截至 18:40</span>
+        </div>
+        <ol class="rank-list">
+          <li><span class="rk-name">录音母带时间戳对不上</span><span class="rk-meta">8.9 · 科技</span></li>
+          <li><span class="rk-name">补时第 4 分钟判罚两版说法</span><span class="rk-meta">8.7 · 赛事</span></li>
+          <li><span class="rk-name">商场撤场通知落款核查</span><span class="rk-meta">8.0 · 民生</span></li>
+          <li><span class="rk-name">招聘公告里的薪资区间改过三次</span><span class="rk-meta">7.8 · 职场</span></li>
+          <li><span class="rk-name">校园讲座海报时间与课表冲突</span><span class="rk-meta">7.8 · 校园</span></li>
+          <li><span class="rk-name">录音母带同一事件第二条（补文件时间）</span><span class="rk-meta">7.6 · 科技</span></li>
+          <li><span class="rk-name">主播连麦切片与原始录屏对比</span><span class="rk-meta">7.1 · 娱乐</span></li>
+          <li><span class="rk-name">球队官微删改公告前后版本</span><span class="rk-meta">7.0 · 赛事</span></li>
+          <li><span class="rk-name">地铁施工告示与工程许可日期差</span><span class="rk-meta">6.9 · 民生</span></li>
+          <li><span class="rk-name">团建费用明细表两处合计不符</span><span class="rk-meta">6.7 · 职场</span></li>
+        </ol>
+      </section>
+
+      <section class="blk" id="timeline">
+        <div class="blk-head">
+          <h2><span class="num">11</span>赛制三轮调整时间线</h2>
+          <span class="more">可逐条核对</span>
+        </div>
+        <ul class="timeline">
+          <li><b>第 1 版 · 9 月 21 日启用</b><span>评分截止 19:00；「原创度」两档打分，与可核度合并计算。</span></li>
+          <li><b>第 2 版 · 10 月 19 日修订</b><span>评委人数从 2 名增至 3 名，新增 1 名外聘；外聘任期 4 个比赛日。</span></li>
+          <li><b>第 3 版 · 11 月 6 日生效</b><span>评分窗口延后至 20:30；删去原创度打分；信息可核度改为 3 档，档差折算 0.8—1.2 分。</span></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏">
+      <div class="side-card">
+        <h2>本页栏目</h2>
+        <nav aria-label="页内导航">
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">大赛概览</a></li>
+            <li><a href="/#featured">今日精选瓜条</a></li>
+            <li><a href="/#latest">最新赛况</a></li>
+            <li><a href="/#channels">分类频道</a></li>
+            <li><a href="/#deep">高分瓜条解析</a></li>
+            <li><a href="/#guide">围观五步</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#comments">围观评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">今日实时榜</a></li>
+            <li><a href="/#timeline">赛制时间线</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="side-card">
+        <h2>今日关键时间</h2>
+        <ul class="mini-list">
+          <li>12:00 <span class="m-date">赛题公布，评委名单同步</span></li>
+          <li>18:00 <span class="m-date">最后一次材料补充窗口开启</span></li>
+          <li>20:00 <span class="m-date">提交与围观打分截止</span></li>
+          <li>20:30 <span class="m-date">出榜，回放与留言同步开放</span></li>
+        </ul>
+      </div>
+
+      <div class="side-card quote-card">
+        <h2 style="border-color:#c98a18">评委原话</h2>
+        <blockquote>「素材再好，缺原件就压到 7.5 以下。」</blockquote>
+        <div class="who">—— 外聘评委「老麦」，11 月 7 日 22:10 留言</div>
+      </div>
+
+      <div class="side-card">
+        <h2>最近三个比赛日</h2>
+        <ul class="mini-list">
+          <li>第 46 比赛日 · 11-07 <span class="m-date">冠军 8.8 分｜3 条降档</span></li>
+          <li>第 45 比赛日 · 11-06 <span class="m-date">冠军 8.4 分｜赛制第 3 版生效</span></li>
+          <li>第 44 比赛日 · 11-05 <span class="m-date">冠军 8.1 分｜可核度改 3 档</span></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#e5342f"/>
+            <path d="M20 22h24l-6 8 6 8H20l6-8z" fill="#fff7e8"/>
+          </svg>
+          <span class="bname">51吃瓜<span>网</span></span>
+        </div>
+        <p style="margin:0 0 10px;color:#a8a294;font-size:13.5px">按比赛日记录参赛瓜条、评分与回放，把每天的赛况留成可核对的档案。</p>
+      </div>
+      <div>
+        <h3>赛区频道</h3>
+        <ul>
+          <li><a href="/#featured">科技赛区</a></li>
+          <li><a href="/#featured">赛事赛区</a></li>
+          <li><a href="/#featured">民生赛区</a></li>
+          <li><a href="/#related">职场赛区</a></li>
+          <li><a href="/#channels">娱乐赛区</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>围观入口</h3>
+        <ul>
+          <li><a href="/#guide">围观流程五步</a></li>
+          <li><a href="/#rank">实时榜单</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">评论精选</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>规则与档案</h3>
+        <ul>
+          <li><a href="/#timeline">赛制版本时间线</a></li>
+          <li><a href="/#deep">评委打分口径</a></li>
+          <li><a href="/#news">资讯与动态</a></li>
+          <li><a href="/#overview">大赛概览</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p class="demo">示例数据说明：页内瓜条标题、参赛者昵称、评委留言、分数与榜单均为演示用示例内容，不代表真实事件或真实人物；赛制时间线中的日期与版本差异按 2026 年 11 月 8 日前的记录示例生成，仅用于展示信息组织方式。</p>
+      <p style="margin:0">内容更新时间：2026 年 11 月 8 日 18:40，对应「最新赛况与更新」板块的 6 条条目与「第 47 比赛日实时榜」的评分快照。</p>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 51吃瓜网每日大赛观看 · 内容示例站点</span>
+      <span>站内检索、FAQ 折叠、导航吸顶与回到顶部为本地交互，不含外部请求。</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var navMain = document.getElementById('navMain');
+  var toTop = document.getElementById('toTop');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){ return document.querySelector(a.getAttribute('href').replace('/#','#')); });
+
+  menuBtn.addEventListener('click', function(){
+    var open = navMain.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navMain.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 860){
+      navMain.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+
+    var pos = window.scrollY + 150, current = null;
+    sections.forEach(function(sec){
+      if(sec && sec.offsetTop <= pos){ current = sec.id; }
+    });
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('href').replace('/#','');
+      if(id === current){ a.classList.add('active'); }
+      else { a.classList.remove('active'); }
+    });
+  }, {passive:true});
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 本地查找
+  var searchInput = document.getElementById('siteSearch');
+  var searchBtn = document.getElementById('searchBtn');
+  var feedback = document.getElementById('searchFeedback');
+  var targets = Array.prototype.slice.call(document.querySelectorAll('main h2, main h3, main .feat-body h3, main .rank-list .rk-name, main summary, main .news-item h3'));
+
+  function bindSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      feedback.style.display = 'none';
+      return;
+    }
+    var hit = null;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i].textContent.indexOf(q) !== -1){ hit = targets[i]; break; }
+    }
+    if(hit){
+      feedback.textContent = '已定位到：' + hit.textContent.trim().slice(0,20);
+      feedback.style.display = 'block';
+      hit.scrollIntoView({behavior:'smooth', block:'center'});
+      hit.style.transition = 'background .4s';
+      hit.style.background = '#fff3c4';
+      setTimeout(function(){ hit.style.background = ''; }, 1800);
+    } else {
+      feedback.textContent = '没有找到与「' + q.slice(0,12) + '」相关的内容，换个赛区名或瓜条关键词试试。';
+      feedback.style.display = 'block';
+    }
+  }
+  searchBtn.addEventListener('click', bindSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); bindSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value){ feedback.style.display = 'none'; }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-box') && !e.target.closest('#searchFeedback')){
+      feedback.style.display = 'none';
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "51吃瓜网每日大赛观看",
+  "description": "按比赛日汇总每日大赛赛程、参赛瓜条、评委打分与围观回放，并提供可核对的评分标准说明。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "每日大赛的评审团固定吗，怎么知道谁在打分？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "每个赛区 3 名评委，其中 1 名为外聘，任期为 4 个比赛日。评委名单在比赛日 12:00 随赛题一并公布，留言区显示评委昵称与打分理由。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "参赛瓜条如果材料不足，会被怎样处理？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "评分表的信息可核度分 3 档，只有转述没有原件的记 1 档，折算约扣 0.8—1.2 分。材料在截止后补齐的不计入当日成绩。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "围观评分和评委评分，哪个更影响最终名次？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "评委分占 70%，围观分占 30%。围观分低于 3 星且理由充分时，评委会在复核环节重看材料。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "同一件事已经有人参赛，还能再提交吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以，但必须提供不同材料或不同角度。同一事件的两条瓜条会分别计分。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
